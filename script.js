@@ -26,6 +26,24 @@ function showScore() {
 }
 showScore();
 
+add1Home.addEventListener("click", () => {
+  scoreHome++;
+  localStorage.setItem("homeScore", scoreHome);
+  let homeScore = localStorage.getItem("homeScore");
+  countElHome.textContent = homeScore;
+});
+add2Home.addEventListener("click", () => {
+  scoreHome += 2;
+  localStorage.setItem("homeScore", scoreHome);
+  let homeScore = localStorage.getItem("homeScore");
+  countElHome.textContent = homeScore;
+});
+add3Home.addEventListener("click", () => {
+  scoreHome += 3;
+  localStorage.setItem("homeScore", scoreHome);
+  let homeScore = localStorage.getItem("homeScore");
+  countElHome.textContent = homeScore;
+});
 
 function add1Guest() {
     scoreGuest += 1
