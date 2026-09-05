@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Score Tracker | Basketball Scoreboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main class="scoreboard">
         <div class="home">
             <h1 class="heading">Team 1</h1>
             <div class="time-bg">
-                <p id="countdownHome">0</p>    
+                <p id="countdownHome"></p>
             </div>
             <div class="addition">
-                <div class="add" onclick="add1Home()">+1</div>
-                <div class="add" onclick="add2Home()">+2</div>
-                <div class="add" onclick="add3Home()">+3</div>
+                <div class="add" id="add1Home">+1</div>
+                <div class="add" id="add2Home">+2</div>
+                <div class="add" id="add3Home">+3</div>
             </div>
         </div>
         <div class="guest">
             <h1 class="heading">Team 2</h1>
             <div class="time-bg">
-                <p id="countdownGuest">0</p>    
+                <p id="countdownGuest"></p>
             </div>
             <div class="addition">
-                <div class="add" onclick="add1Guest()">+1</div>
-                <div class="add" onclick="add2Guest()">+2</div>
-                <div class="add" onclick="add3Guest()">+3</div>
+                <div class="add" id="add1Guest">+1</div>
+                <div class="add" id="add2Guest">+2</div>
+                <div class="add" id="add3Guest">+3</div>
             </div>
         </div>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>
