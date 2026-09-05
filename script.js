@@ -7,23 +7,24 @@ const add1Guest = document.getElementById("add1Guest");
 const add2Guest = document.getElementById("add2Guest");
 const add3Guest = document.getElementById("add3Guest");
 
-let countElGuest = document.getElementById("countdownGuest")
+let homeScore = localStorage.getItem("homeScore");
+let guestScore = localStorage.getItem("guestScore");
+let scoreHome = 0;
+let scoreGuest = 0;
 
-let scoreHome = 0
-let scoreGuest = 0
-
-function add1Home() {
-    scoreHome += 1
-    countElHome.textContent = scoreHome
+function showScore() {
+  if (homeScore === null || homeScore.length === 0) {
+    countElHome.textContent = 0;
+  } else {
+    countElHome.textContent = localStorage.getItem("homeScore");
+  }
+  if (guestScore === null || guestScore.length === 0) {
+    countElGuest.textContent = 0;
+  } else {
+    countElGuest.textContent = localStorage.getItem("guestScore");
+  }
 }
-function add2Home() {
-    scoreHome += 2
-    countElHome.textContent = scoreHome
-}
-function add3Home() {
-    scoreHome += 3
-    countElHome.textContent = scoreHome
-}
+showScore();
 
 
 function add1Guest() {
