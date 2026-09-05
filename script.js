@@ -45,15 +45,21 @@ add3Home.addEventListener("click", () => {
   countElHome.textContent = homeScore;
 });
 
-function add1Guest() {
-    scoreGuest += 1
-    countElGuest.textContent = scoreGuest
-}
-function add2Guest() {
-    scoreGuest += 2
-    countElGuest.textContent = scoreGuest
-}
-function add3Guest() {
-    scoreGuest += 3
-    countElGuest.textContent = scoreGuest
-}
+add1Guest.addEventListener("click", () => {
+  scoreGuest++;
+  localStorage.setItem("guestScore", scoreGuest);
+  let guestScore = localStorage.getItem("guestScore");
+  countElGuest.textContent = guestScore;
+});
+add2Guest.addEventListener("click", () => {
+  scoreGuest += 2;
+  localStorage.setItem("guestScore", scoreGuest);
+  let guestScore = localStorage.getItem("guestScore");
+  countElGuest.textContent = guestScore;
+});
+add3Guest.addEventListener("click", () => {
+  scoreGuest += 3;
+  localStorage.setItem("guestScore", scoreGuest);
+  let guestScore = localStorage.getItem("guestScore");
+  countElGuest.textContent = guestScore;
+});
