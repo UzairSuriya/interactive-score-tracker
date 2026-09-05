@@ -1,4 +1,11 @@
-let countElHome = document.getElementById("countdownHome")
+const countElHome = document.getElementById("countdownHome");
+const countElGuest = document.getElementById("countdownGuest");
+const add1Home = document.getElementById("add1Home");
+const add2Home = document.getElementById("add2Home");
+const add3Home = document.getElementById("add3Home");
+const add1Guest = document.getElementById("add1Guest");
+const add2Guest = document.getElementById("add2Guest");
+const add3Guest = document.getElementById("add3Guest");
 
 let countElGuest = document.getElementById("countdownGuest")
 
